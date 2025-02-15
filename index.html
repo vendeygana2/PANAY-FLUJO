@@ -40,7 +40,7 @@
 
         .popup img {
             width: auto;
-            height: 150px;
+            height: 75px;
             margin: 10px;
             animation: blink 1s infinite;
         }
@@ -110,11 +110,16 @@
             color: #f44336;
         }
     </style>
+    <script>
+        function closePopup() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
     <div class="popup-container">
         <div class="popup">
-            <button class="close-btn" onclick="window.location.href='https://www.vendeygana.net/user/'">X</button>
+            <button class="close-btn" onclick="closePopup()">X</button>
             <img src="https://dhgf5mcbrms62.cloudfront.net/110979006/header-fcHJMd/IVsTzWZ-200x200.webp" alt="PanaxStreaming">
             <img src="https://flujotvla.com/wp-content/uploads/2025/01/logo_flujotv_blanco-300x181-1-e1735926597394.png" alt="Flujo TV">
             <h1>Si quieres disfrutar sin complicaciones</h1>
