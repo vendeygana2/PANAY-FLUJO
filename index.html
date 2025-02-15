@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="icon" href="https://dhgf5mcbrms62.cloudfront.net/110979006/header-fcHJMd/IVsTzWZ-200x200.webp" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .popup-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90%;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border: 5px solid green;
+            border-radius: 10px;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .popup img {
+            width: auto;
+            height: 150px;
+            margin: 10px;
+            animation: blink 1s infinite;
+        }
+
+        .image-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .image-row span {
+            font-size: 1.5em;
+            color: white;
+            margin-left: 10px;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .popup h1 {
+            font-size: 1.5em;
+        }
+
+        .popup p {
+            margin: 10px 0;
+        }
+
+        .popup button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .popup .btn-panaxstreaming {
+            background-color: #a9ff00;
+            color: black;
+        }
+
+        .popup .btn-flujotv {
+            background-color: #00a9ff;
+        }
+
+        .popup button:hover {
+            opacity: 0.8;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup">
+            <button class="close-btn" onclick="window.location.href='https://www.vendeygana.net/user/'">X</button>
+            <img src="https://dhgf5mcbrms62.cloudfront.net/110979006/header-fcHJMd/IVsTzWZ-200x200.webp" alt="PanaxStreaming">
+            <img src="https://flujotvla.com/wp-content/uploads/2025/01/logo_flujotv_blanco-300x181-1-e1735926597394.png" alt="Flujo TV">
+            <h1>Si quieres disfrutar sin complicaciones</h1>
+            <p>de problemas como CONTRASEÑA INCORRECTA Y LA DIFICULTAD DE INICIAR SESIÓN DE NETFLIX y otras aplicaciones.</p>
+            <p><strong>ADQUIERE PANAXTREAMING O FLUJO TV</strong></p>
+            <p>PANAXTREAMING ES ORGULLOSAMENTE VENEZOLANA HECHA POR VENEZOLANOS y como FLUJO TV TE OFRECEN:</p>
+            <p>TV EN VIVO más de 800 CANALES: Deportes (TODOS LOS ESPN, FOXSPORT Y DIRECTV SPORTS), Noticias, Infantiles, música. Y un CATALOGO DE MÁS DE 9 MIL PELÍCULAS Y SERIES ESTRENOS DE LAS PRINCIPALES PLATAFORMAS COMO NETFLIX, AMAZON PRIME, DISNEY PLUS, MAX, CRUNCHYROLL, APPLE TV.</p>
+            <button class="btn-panaxstreaming" onclick="window.location.href='https://vendeygana2.github.io/comprapanaxtreaming/'">Comprar PanaxStreaming</button>
+            <button class="btn-flujotv" onclick="window.location.href='https://vendeygana2.github.io/compraflujotv/'">Comprar Flujo TV</button>
+        </div>
+    </div>
+</body>
+</html>
